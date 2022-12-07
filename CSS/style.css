@@ -1,0 +1,67 @@
+.inputbox {
+    height: 40px;
+    width: 406px;
+    border: 1px solid grey;
+    border-top: none;
+    background-color: #444c38;
+    text-align: right;
+    font-size: 45px;
+    border-radius: 0px 0px 6px 6px;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+
+.inputEq {
+    height: 40px;
+    width: 406px;
+    border: 1px solid grey;
+    border-bottom: none;
+    background-color: #444c38;
+    text-align: right;
+    font-size: 30px;
+    border-radius: 6px 6px 0px 0px;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+
+.container{
+    border: 1px solid #444c38;
+    width: 419px;
+    height: 531px;
+    background-color: rgba(81, 81, 83, 0.958);
+    border-radius: 6px;
+    padding-left: 7px;
+    padding-top: 7px;
+}
+
+.btn-input {
+    height: 86px;
+    width: 100px;
+    border: 1px solid grey;
+    background-color:#3d4035 ;
+    text-align: center;
+    font-size: 34px;
+    border-radius: 4px;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.btn-op {
+    height: 86px;
+    width: 100px;
+    border: 1px solid grey;
+    background-color:#3d4035 ;
+    text-align: center;
+    font-size: 34px;
+    border-radius: 4px;
+    margin-left: 0px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+.history{
+    height: 100px;
+    width: 150px;
+
+}
