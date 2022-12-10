@@ -15,10 +15,11 @@
         <input type ='text' class="inputEq" readonly><br>
         <input type="text" class="inputbox"  value="0"><br>
 
+        <button onclick="showHistory()"  class="btn-op btn-history"><i class="fa-solid fa-clock-rotate-left"></i></button>
         <button onclick="clearInput()"  class="btn-op btn-clear">C</button>
-        <button class="btn-op" onclick="setvalue('%')">%</button>
-        <button class="btn-op" onclick="setvalue('+')"><i class="fa-solid fa-delete-left"></i></button>
-        <button onclick="showHistory()"  class="btn-op btn-history"><i class="fa-solid fa-clock-rotate-left"></i></button><br>
+        <button class="btn-op" onclick="setvalue('')"><i class="fa-solid fa-delete-left"></i></button>
+        <button class="btn-op" onclick="getAns('=')">=</button>
+        <br>
 
         <button class="btn-input" onclick="setvalue('7')">7</button>
         <button class="btn-input" onclick="setvalue('8')">8</button>
@@ -35,19 +36,20 @@
         <button class="btn-input" onclick="setvalue('3')">3</button>
         <button class="btn-op" onclick="setvalue('*')">*</button><br>
 
-        <button class="btn-input" onclick="setvalue('/')">/</button>
+        <button class="btn-input" onclick="setvalue('00')">00</button>
         <button class="btn-input" onclick="setvalue('0')">0</button>
         <button class="btn-input" onclick="setvalue('.')">.</button>
-        <button class="btn-op" onclick="getAns('=')">=</button><br>
-    </div>
+        <button class="btn-op" onclick="setvalue('/')">/</button>
+        <br>
 
-  </div>
-  <div class ='history'>
-   <div class="btn-remove" onclick="removeHistory()"> X </div>
-   <div class="history-div"></div>   
-
-  </div>
+        <div class ='history'>
+          <button class="btn-close" onclick="closeHistory()"><i class="fa-solid fa-xmark" style="color: rgb(216, 211, 211);"></i></button>
+          <button class="btn-remove" onclick="removeHistory()"><i class="fa-sharp fa-solid fa-trash" style="color: rgb(216, 211, 211);"></i></button><br><br>
+          <div class="history-div"></div>   
+        </div>
+      </div>
     </div>
+    
     <script src="JS/index.js"></script>
 
 </body>

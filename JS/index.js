@@ -11,22 +11,27 @@ function setvalue(num){
 }
 
 function clearInput(){
+    inputEq.value='';
     inputBox.value=0;
 }
 
 function getAns(){
+    equations.push(inputBox.value + " = ");
+    console.log("eq =:",equations);
+    answers.push(eval(inputBox.value));
+    console.log("ans:",answers);
     inputEq.value = inputBox.value + " = ";
     inputBox.value=eval(inputBox.value);
 }
 
 function showHistory()
 {
-    alert("hello");
+    document.querySelector(".history").style.display='block';
     historyDiv.innerHTML = "";
 
     for(let i=0; i<answers.length;i++)
     {
-        historyDiv.innerHTML += '<div class="section"><h6>'+ equations[i]+ ' </h6><h6>'+answers[i]+'</h6></div>';
+        historyDiv.innerHTML += '<div class="section">'+ equations[i]+' '+answers[i]+'<br><br></div>';
     }
 }
 
@@ -40,4 +45,9 @@ function removeHistory()
         equations = [];
     }
 
+
+}
+
+function closeHistory(){
+    document.querySelector(".history").style.display='none';
 }
